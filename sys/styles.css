@@ -30,3 +30,49 @@ position: sticky;
 top: 10px;
 flex-shrink: 0;
 }
+.nav {
+display: block;
+margin: 0 auto;
+width: 100%;
+margin-top: 5px;
+}
+.nav a {
+color: #00f;
+text-decoration: none;
+}
+.nav-title {
+font-weight: bold;
+font-size: 33px;
+}
+.nav-home {
+position: relative;
+top: 12px;
+}
+.nav-law {
+position: relative;
+top: 12px;
+}
+.nav-links {
+position: relative;
+top: 12px;
+}
+.nav-slash1 {
+position: relative;
+right: 105px;
+top: 12px;
+}
+.nav-slash2 {
+position: relative;
+right: 72px;
+top: 12px;
+}
+.nav-bottom {
+position: relative;
+bottom: 11px;
+}
+.nav-star {
+transform: rotate(25deg);
+position: relative;
+right: 14px;
+bottom: 14px;
+}
