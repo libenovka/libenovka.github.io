@@ -27,10 +27,12 @@ text-align: left;
 width: 100%;
 }
 .star {
+text-align: center;
 position: sticky;
 top: 10px;
+right: 0;
 flex-shrink: 0;
-float: right;
+margin-left: auto;
 }
 .nav {
 display: block;
