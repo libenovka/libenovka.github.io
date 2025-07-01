@@ -15,15 +15,14 @@ gap: 10px;
 align-items: center;
 justify-content: center;
 background-color: #fff;
-padding: 20px;
+padding: 10px;
+width: 1200px;
 }
 .content {
 color: #00f;
-width: 1111px;
 hyphens: auto;
 word-wrap: break-word;
 overflow-wrap: break-word;
-padding: 10px;
 }
 .star {
 text-align: center;
