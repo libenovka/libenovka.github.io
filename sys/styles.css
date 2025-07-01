@@ -1,9 +1,7 @@
-ПОДКЛЮЧЕНИЕ ШРИФТОВ
 @font-face {
 font-family: 'font';
 src: url('https://libenovka.github.io/sys/font.ttf') format('truetype');
 }
-СТИЛИ ДЛЯ ОСНОВНОЙ РАЗМЕТКИ МАКЕТА
 body {
 font-family: arial;
 font-family: 'font', sans-serif;
@@ -27,6 +25,5 @@ overflow-wrap: break-word;
 padding: 10px;
 }
 .star {
-width: 60px;
 text-align: center;
 }
