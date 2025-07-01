@@ -1,19 +1,14 @@
-@font-face {
-font-family: 'font';
-src: url('https://libenovka.github.io/sys/font.ttf') format('truetype');
-}
 body {
 font-family: arial;
 font-family: 'font', sans-serif;
 background-color: #00f;
 }
 .site {
-display: block;
-margin: 0 auto;
 display: flex;
+margin: 0 auto;
 gap: 10px;
-align-items: center;
-justify-content: center;
+align-items: flex-start;
+justify-content: space-between;
 background-color: #fff;
 padding: 10px;
 width: 1200px;
@@ -23,9 +18,12 @@ color: #00f;
 hyphens: auto;
 word-wrap: break-word;
 overflow-wrap: break-word;
+text-align: left;
+width: 100%;
 }
 .star {
 text-align: center;
 position: sticky;
 top: 10px;
+flex-shrink: 0;
 }
