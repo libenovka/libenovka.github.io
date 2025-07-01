@@ -1,0 +1,28 @@
+ПОДКЛЮЧЕНИЕ ШРИФТОВ
+@font-face {
+font-family: 'font';
+src: url('https://libenovka.github.io/sys/font.ttf') format('truetype');
+}
+СТИЛИ ДЛЯ ОСНОВНОЙ РАЗМЕТКИ МАКЕТА
+body {
+font-family: arial;
+font-family: 'font', sans-serif;
+background-color: #00f;
+}
+.site {
+display: block;
+margin: 0 auto;
+}
+.content {
+color: #00f;
+background-color: #fff;
+width: 1111px;
+hyphens: auto;
+word-wrap: break-word;
+overflow-wrap: break-word;
+padding: 10px;
+}
+.star {
+width: 60px;
+text-align: center;
+}
