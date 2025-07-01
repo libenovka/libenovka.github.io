@@ -26,4 +26,6 @@ padding: 10px;
 }
 .star {
 text-align: center;
+position: sticky;
+top: 10px;
 }
