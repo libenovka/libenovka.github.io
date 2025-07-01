@@ -35,4 +35,15 @@ content lol
 </div>
 </div>
 </body>
+<script>
+function loadTextFromFile() {
+fetch('https://libenovka.github.io/sys/stroka.txt')
+.then(response => response.text())
+.then(data => {
+document.getElementById('stroka').textContent = data;
+})
+.catch(error => console.error('Ошибка при загрузке бегущей строки:', error));
+}
+window.onload = loadTextFromFile;
+</script>
 </html>
