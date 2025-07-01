@@ -3,8 +3,7 @@ font-family: 'font';
 src: url('https://libenovka.github.io/sys/font.ttf') format('truetype');
 }
 body {
-font-family: arial;
-font-family: 'font', sans-serif;
+font-family: 'font', arial, sans-serif;
 background-color: #00f;
 }
 .site {
