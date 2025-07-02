@@ -53,13 +53,13 @@ const countdownDiv = document.getElementById('countdown');
 if (now < new Date('2025-07-07T00:00:00')) {
 const timeLeft = targetDate.getTime() - now.getTime();
 const daysLeft = Math.ceil(timeLeft / (1000 * 60 * 60 * 24));
-countdownDiv.textContent = `Операция \Рябчик\ начнется через ${daysLeft} дней`;
+countdownDiv.textContent = `Операция &quot;Рябчик&quot; начнется через ${daysLeft} дней.`;
 } else if (now >= new Date('2025-07-07T00:00:00') && now < targetDate) {
-countdownDiv.textContent = "Операция \Рябчик\ начнется в 14:20.";
+countdownDiv.textContent = "Операция &quot;Рябчик&quot; начнется в 14:20.";
 } else if (now >= targetDate && now < new Date('2025-07-08T16:00:00')) {
-countdownDiv.textContent = "Операция \Рябчик\ в самом разгаре.";
+countdownDiv.textContent = "Операция &quot;Рябчик&quot; в самом разгаре.";
 } else {
-countdownDiv.textContent = "Операция \Рябчик\ была успешно завершена. Дважды слава Либеновке!";
+countdownDiv.textContent = "Операция &quot;Рябчик&quot; была успешно завершена. Дважды слава Либеновке!";
 }
 }
 
