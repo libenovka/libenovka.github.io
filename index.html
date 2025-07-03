@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Шаблон</title>
+<link rel="icon" href="https://libenovka.github.io/sys/favicon.png" type="image/png">
+<link rel="stylesheet" href="https://libenovka.github.io/sys/styles.css">
+</head>
+<body>
+<div class="site">
+<div class="content">
+<div class="nav">
+<span class="nav-title">Либеновка</span>
+<svg class="nav-star" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 412 392">
+<path fill="#00f" d="m79,392 127-392 127,392-333-242h412"/>
+</svg>
+<div class="nav-bottom">
+<a href="https://libenovka.github.io/"><span class="nav-home">главная</span></a>
+<a href="https://libenovka.github.io/about/"><span class="nav-law">о нас</span></a>
+<a href="https://libenovka.github.io/links/"><span class="nav-links">ссылки</span></a>
+<span class="nav-slash1">|</span>
+<span class="nav-slash2">|</span>
+</div>
+</div>
+<center><div id="countdown">error</div></center>
+<br>
+<!-- Здесь начало контента -->
+content lol
+</div>
+<div class="star">
+<svg class="star" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 412 392">
+<path fill="#00f" d="m79,392 127-392 127,392-333-242h412"/>
+</svg>
+</div>
+</div>
+</body>
+<script>
+function loadTextFromFile() {
+fetch('https://libenovka.github.io/sys/stroka.txt')
+.then(response => response.text())
+.then(data => {
+document.getElementById('stroka').textContent = data;
+})
+.catch(error => console.error('Ошибка при загрузке бегущей строки:', error));
+}
+window.onload = loadTextFromFile;
+
+function updateCountdown() {
+const targetDate = new Date('2025-07-07T14:20:00');
+const now = new Date();
+const countdownDiv = document.getElementById('countdown');
+if (now < new Date('2025-07-07T00:00:00')) {
+const timeLeft = targetDate.getTime() - now.getTime();
+const daysLeft = Math.ceil(timeLeft / (1000 * 60 * 60 * 24));
+countdownDiv.textContent = `Операция «Рябчик» начнется через ${daysLeft} дней.`;
+} else if (now >= new Date('2025-07-07T00:00:00') && now < targetDate) {
+countdownDiv.textContent = "Операция «Рябчик» начнется в 14:20.";
+} else if (now >= targetDate && now < new Date('2025-07-08T16:00:00')) {
+countdownDiv.textContent = "Операция «Рябчик» в самом разгаре.";
+} else {
+countdownDiv.textContent = "Операция «Рябчик» была успешно завершена. Дважды слава Либеновке!";
+}
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</html>
